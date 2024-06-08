@@ -1,0 +1,26 @@
+using System;
+namespace Hoss
+{
+    class Myclass
+	{
+        public void area(double length, double height)
+		{
+            Console.WriteLine ("Area of Rectengal : " + length*height);
+			
+        }
+		public void area(double radius)
+		{
+            Console.WriteLine("Area od circle : "+ Math.PI*radius*radius);
+        }
+    }
+	
+	class Program
+	{
+        static void Main(string[] args)
+		{
+            Myclass obj= new Myclass();
+			obj.area(5,5);
+			obj.area(1);
+        }
+    }
+}
