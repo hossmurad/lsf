@@ -1,0 +1,33 @@
+using System;
+namespace Hoss
+{
+    class Myclass
+	{
+        public void doMath(int val)
+		{
+            Console.WriteLine("Square({0}) : {1} ",val,val*val);
+			
+        
+	   }
+	   public void doMath(int a, int b)
+	   {
+           Console.WriteLine(" {0} * {1} = {2}", a,b,a*b);
+		   
+       }
+	   public void doMath(int a,int b,int c)
+	   {
+           Console.WriteLine("{0}+{1}+{2}={3}",a,b,c,a+b+c);
+       }
+    }
+	
+	class Program
+	{
+        static void Main(string [] args)
+		{
+            Myclass obj = new Myclass();
+			obj.doMath(5);
+			obj.doMath(5,6);
+			obj.doMath(5,6,7);
+        }
+    }
+}
