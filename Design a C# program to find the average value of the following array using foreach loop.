@@ -1,0 +1,32 @@
+using System;
+namespace Hoss
+{
+    class Test
+	{
+        static void Main(string []args)
+		{
+            Console.WriteLine("hellow bro");
+			int [] numbers ={12,34,65,89,122,989,233,233,9,444,787};
+			int max = numbers[0];
+			int min = numbers[0];
+			double sum = 0;
+			int count = numbers.Length;
+			foreach (int number in numbers)
+			{
+                sum+=number;
+				if(max<number){
+                    max = number;
+                }
+				//min number
+				if(min>number){
+                    min =number;
+                }
+            }
+			double average = sum/count;
+			
+			Console.WriteLine("average : {0}",average);
+			Console.WriteLine("Max number :{0}",max);
+			Console.WriteLine("Min number :{0}",min);
+        }
+    }
+}
