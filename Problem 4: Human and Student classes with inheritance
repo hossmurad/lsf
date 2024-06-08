@@ -1,0 +1,40 @@
+using System;
+namespace Hoss
+{
+    class Human
+	{
+        public int age;
+		public string country;
+		public void displayHuman()
+		{
+            Console.WriteLine("Age : {0}",age);
+			Console.WriteLine("Country : {0}",country);
+        }
+    }
+	
+	class Student : Human
+	{
+        public double cgpa;
+		public string universityName;
+		public void displayStudent()
+		{
+            Console.WriteLine("CGPA : "+ cgpa);
+			Console.WriteLine("University Name : "+ universityName);
+        }
+    }
+	
+	class Program
+	{
+        static void Main(string[] args)
+		{
+            Student sobj = new Student();
+			sobj.age = 22;
+			sobj.country = "Bangladesh";
+			sobj.cgpa = 3.92;
+			sobj.universityName = "Uttara University";
+			
+			sobj.displayHuman();
+			sobj.displayStudent();
+        }
+    }
+}
