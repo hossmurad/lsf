@@ -1,0 +1,22 @@
+using System;
+namespace Hoss
+{
+    class Program1
+	{
+        public double radius;
+		public void area()
+		{
+            Console.WriteLine("Area of Circle :{0}",3.1416*radius*radius);
+        }
+    }
+	class Program2
+	{
+        static void Main(string[] args)
+		{
+           Program1 obj = new Program1();
+		   Console.Write ("Enter radius of the circle  : ");
+		    obj.radius =double.Parse(Console.ReadLine());
+			obj.area();
+        }
+    }
+}
