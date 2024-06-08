@@ -1,0 +1,32 @@
+using System;
+namespace Hoss
+{
+    class Laptop
+	{
+        public string laptopBand;
+		public string model;
+		public int price ;
+		
+		public Laptop(string theLaptopBand,string theModel,int thePrice)
+		{
+            laptopBand =theLaptopBand;
+			model = theModel;
+			price =thePrice;
+			
+			
+        }
+		
+		
+    }
+	
+	class Program
+	{
+        static void Main(string[] args)
+		{
+            Laptop obj = new Laptop("DCL","S3", 35000);
+			Console.WriteLine ("Laptop Name : "+ obj.laptopBand);
+			Console.WriteLine("Laptop Model : " + obj.model);
+			Console.WriteLine("Laptop price ; "+ obj.price);
+        }
+    }
+}
