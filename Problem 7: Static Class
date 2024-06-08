@@ -1,0 +1,18 @@
+using System;
+
+static class Myclass
+{
+    public static string welcomemsg;
+	public static void msg()
+	{
+        Console.WriteLine(welcomemsg);
+    }
+}
+class Program
+{
+    static void Main(string[] args)
+	{
+        Myclass.welcomemsg = "Welcome to ststic output M";
+		Myclass.msg();
+    }
+}
