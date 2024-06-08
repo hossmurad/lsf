@@ -1,0 +1,20 @@
+using System;
+class Program
+{
+    static void Main(string[] args)
+	{
+        double height;
+		double weight;
+		Console.Write("Enter the value of height :");
+		height = double.Parse(Console.ReadLine());
+		Console.Write("Enter the value of weight :");
+		weight = double.Parse(Console.ReadLine());
+		
+	    void area(double h,double w){
+            Console.WriteLine("Area : {0} ",h*w);
+			
+        }
+		
+		area(height,weight);
+    }
+}
